@@ -6,3 +6,8 @@ CONFIG -= qt
 SOURCES += \
     ../dsa_kgen.cpp
 
+INCLUDEPATH += \
+    ../../../build/include
+
+LIBS += \
+    -L../../.. -lbotan-1.10
