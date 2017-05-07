@@ -27,12 +27,12 @@ int main()
 
       ECDSA_PublicKey ecdsa_pub = ecdsa;
 
-      /*
+
       std::cout << params.get_curve().get_p() << "\n";
       std::cout << params.get_order() << "\n";
       std::cout << X509::PEM_encode(ecdsa);
       std::cout << PKCS8::PEM_encode(ecdsa);
-      */
+
 
       PK_Signer signer(ecdsa, "EMSA1(SHA-256)");
 
