@@ -21,8 +21,8 @@ int main()
 
    std::string passphrase = "secret";
 
-   std::ifstream infile("readme.txt");
-   std::ofstream outfile("readme.txt.enc");
+   std::ifstream infile("../readme.txt");
+   std::ofstream outfile("../readme.txt.enc");
 
    PKCS5_PBKDF2 pbkdf2(new HMAC(new SHA_160));
 
