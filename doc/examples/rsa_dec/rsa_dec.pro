@@ -3,5 +3,11 @@ CONFIG += console c++11
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp
+SOURCES += \
+    ../rsa_dec.cpp
 
+INCLUDEPATH += \
+    ../../../build/include
+
+LIBS += \
+    -L../../.. -lbotan-1.10
